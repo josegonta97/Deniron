@@ -1,17 +1,27 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar hidden>
     <ion-title>
       Tab 1
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-content class="background">
+  <div class="collection" id="collection" style="margin-left: 80vw; margin-top: 45vw;">
+    <ion-button tab="tab1">
+      <ion-icon name="triangle"></ion-icon>
+      <ion-label></ion-label>
+    </ion-button>
+  
+    <ion-button tab="tab2">
+      <ion-icon name="ellipse"></ion-icon>
+      <ion-label></ion-label>
+    </ion-button>
+  
+    <ion-button tab="tab3">
+      <ion-icon name="square"></ion-icon>
+      <ion-label></ion-label>
+    </ion-button>
+  </div>
+  
 </ion-content>
