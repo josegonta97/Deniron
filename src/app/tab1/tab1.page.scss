@@ -1,5 +1,5 @@
 ion-content.background{
-    --background: url(poblado.jpg) 0 0/100% 100% no-repeat;
+    --background: url(poblado.png) 0 0/100% 100% no-repeat;
 }
 
 .collection {
@@ -10,11 +10,21 @@ ion-content.background{
 }
 
 ion-button{
-    color: rgb(3, 12, 12);    
+    color: rgb(0, 0, 0);
     border-radius: round;
-    width: 56px;
+    width: 56px;        
+    position: absolute;
+    margin-left: 85%;
+    margin-top: 47%;
+
 
     &::after{
         color: transparent;
     }
+
+
+}
+
+.circulo{
+    --background: url(circulo vacio.png);
 }
