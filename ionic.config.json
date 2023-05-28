@@ -1,5 +1,7 @@
 {
   "name": "Deniron",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

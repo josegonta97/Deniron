@@ -11,20 +11,15 @@ ion-content.background{
 
 ion-button{
     color: rgb(0, 0, 0);
-    border-radius: round;
     width: 56px;        
     position: absolute;
     margin-left: 85%;
-    margin-top: 47%;
-
-
-    &::after{
-        color: transparent;
-    }
-
-
+    margin-top: 47%;    
+    --background: transparent;
+    --border-color: transparent;
 }
 
-.circulo{
-    --background: url(circulo vacio.png);
+button{
+    background-color: transparent;   
 }
+       
