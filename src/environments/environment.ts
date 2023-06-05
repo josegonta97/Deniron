@@ -4,15 +4,15 @@
 
 export const environment = {
   production: false,
-  firebase: {
-    apiKey: "AIzaSyDWvSbxufk5RXfWU1zsqcCsSd8ck0Cyy1w",
-    authDomain: "deniron-4d7e6.firebaseapp.com",
-    databaseURL: "https://deniron-4d7e6-default-rtdb.europe-west1.firebasedatabase.app/",
-    projectId: "deniron-4d7e6",
-    storageBucket: "deniron-4d7e6.appspot.com",
-    messagingSenderId: "818439536203"
+  dbConfig: {
+    host: 'localhost',
+    port: 3306,
+    user: 'root',
+    password: 'root',
+    database: 'Deniron'
   }
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file

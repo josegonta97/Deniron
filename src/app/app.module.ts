@@ -6,7 +6,7 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,7 +15,7 @@ import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
     IonicModule.forRoot(), 
     AppRoutingModule,    
   ],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, ScreenOrientation],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

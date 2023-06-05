@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
 
 
 
@@ -10,10 +9,8 @@ import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
 })
 export class MenuComponent implements OnInit {
 
-  constructor(public screenOrientacion: ScreenOrientation
-  ) {
+  constructor() {
     // Bloqueo la pantalla de forma horizontal    
-    this.screenOrientacion.lock(this.screenOrientacion.ORIENTATIONS.LANDSCAPE);
   }
 
   ngOnInit() {
