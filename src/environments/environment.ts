@@ -13,6 +13,17 @@ export const environment = {
   }
 };
 
+export const prod = {
+  production: true,
+  dbConfig: {
+    host: 'localhost',
+    port: 3306,
+    user: 'root',
+    password: 'root',
+    database: 'Deniron'
+  }
+};
+
 
 /*
  * For easier debugging in development mode, you can import the following file
