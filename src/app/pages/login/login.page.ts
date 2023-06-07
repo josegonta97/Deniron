@@ -1,30 +1,15 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
 })
-export class LoginPage {
-  email!: string;
-  password!: string;
+export class LoginPage implements OnInit {
 
-  constructor(/*private dbService: DbService*/) {}
+  constructor() { }
 
-  login() {
-    // Aquí puedes agregar la lógica para autenticar al usuario
-    //console.log('Iniciar sesión con correo:', this.email, 'y contraseña:', this.password);    
+  ngOnInit() {
   }
 
-  
-
-  /*async executeQuery() {
-    try {
-      const results = await this.dbService.query('SELECT * FROM usu where usucod = '+ this.email);
-      console.log('Resultados:', results);
-    } catch (error) {
-      console.error('Error al ejecutar la consulta:', error);
-    }
-  }*/
 }

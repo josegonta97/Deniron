@@ -3,27 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  dbConfig: {
-    host: 'localhost',
-    port: 3306,
-    user: 'root',
-    password: 'root',
-    database: 'Deniron'
-  }
+  production: false
 };
-
-export const prod = {
-  production: true,
-  dbConfig: {
-    host: 'localhost',
-    port: 3306,
-    user: 'root',
-    password: 'root',
-    database: 'Deniron'
-  }
-};
-
 
 /*
  * For easier debugging in development mode, you can import the following file
