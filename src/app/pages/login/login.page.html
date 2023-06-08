@@ -5,18 +5,27 @@
 </ion-header>
 
 <ion-content class="ion-padding">
-  <!--form (ngSubmit)="login()"-->
     <ion-item>
-      <ion-label position="floating">Correo electrónico</ion-label>
-      <ion-input type="email"></ion-input>
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input type="username" [(ngModel)]="username"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label position="floating">Contraseña</ion-label>
-      <ion-input type="password"></ion-input>
-    </ion-item>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>    
 
-    <ion-button expand="full" type="submit" [routerLink]="['../ciudad']">Iniciar sesión</ion-button>
-  <!--/form-->
+    <div class="ion-padding">
+    <ion-label *ngIf="error" color="danger">{{ error }}</ion-label>
+    </div>
+    
+    <ion-button expand="full" type="submit" (click)="login()">Iniciar sesión</ion-button>
+    <div class="ion-padding">
+      <div class="ion-text-center">
+        <ion-label class="link-as-text">
+          <a href="tu-enlace-aquí">¿No tienes cuenta? Registrarse ahora</a>
+        </ion-label>
+      </div>
+    </div>
 </ion-content>
 
