@@ -3,8 +3,6 @@ import { Router } from '@angular/router';
 import { ScreenOrientation } from '@awesome-cordova-plugins/screen-orientation/ngx';
 import { ApiService } from 'src/app/services/api.service';
 
-
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
