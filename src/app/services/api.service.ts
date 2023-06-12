@@ -7,6 +7,7 @@ import { User } from '../models/user';
   providedIn: 'root'
 })
 export class ApiService {
+  
 
   constructor(private http: HttpClient) { 
   }
@@ -16,7 +17,7 @@ export class ApiService {
   }
   
   createUser(user: User) {
-    return this.http.post('https://api.example.com/users', user);
+    return this.http.post('http://localhost:8080/api/v1/users', user);
   }
   
   updateUser(userId: number, user: User) {

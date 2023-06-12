@@ -1,14 +1,13 @@
 .collection {
     display: grid;
     grid-template-columns: repeat(auto-fit, 5.5vw);
-    grid-auto-rows: 10vw;
+    grid-auto-rows: 10px;
     justify-content: center;
+    margin-top: 0vw;
+    margin-left: 0vw;
 }
 
 ion-button{
     color: rgb(0, 0, 0);
-    width: 56px;        
-    margin-left: 85%;
-    margin-top: 47%;   
-    position: absolute;
+    width: 56px;       
 }

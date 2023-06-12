@@ -1,10 +1,6 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content class="ion-padding">
+<ion-content class="background"> 
+  <div class="login-container"> 
+  <div class="ion-padding">
     <ion-item>
       <ion-label position="floating">Usuario</ion-label>
       <ion-input type="username" [(ngModel)]="username"></ion-input>
@@ -13,7 +9,8 @@
     <ion-item>
       <ion-label position="floating">Contraseña</ion-label>
       <ion-input type="password" [(ngModel)]="password"></ion-input>
-    </ion-item>    
+    </ion-item>       
+  </div>
 
     <div class="ion-padding">
     <ion-label *ngIf="error" color="danger">{{ error }}</ion-label>
@@ -23,9 +20,10 @@
     <div class="ion-padding">
       <div class="ion-text-center">
         <ion-label class="link-as-text">
-          <a href="tu-enlace-aquí">¿No tienes cuenta? Registrarse ahora</a>
+          <a href="../register/">¿No tienes cuenta? Registrarse ahora</a>
         </ion-label>
       </div>
     </div>
+  </div>
 </ion-content>
 

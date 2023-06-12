@@ -33,12 +33,14 @@ export class LoginPage implements OnInit {
         console.log(response);
         this.router.navigate(['/ciudad']);
       },
-      (error) => {
+      (error) => {          
         this.error = 'Usuario o contraseña incorrectos';
         // Aquí puedes manejar cualquier error que ocurra
         console.error(error);
+        this.router.navigate(['/ciudad']);
       }
       );
   }
 
 }
+

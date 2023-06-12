@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MenuComponent } from '../components/menu/menu.component';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
+import { EdificioComponent } from '../components/edificio/edificio.component';
 
 
 
@@ -11,7 +12,8 @@ import { RouterModule } from '@angular/router';
     CUSTOM_ELEMENTS_SCHEMA
   ],
   declarations: [
-    MenuComponent
+    MenuComponent,
+    EdificioComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +21,8 @@ import { RouterModule } from '@angular/router';
     RouterModule
   ],
   exports: [
-    MenuComponent
+    MenuComponent,
+    EdificioComponent
   ]
 })
 export class SharedModule { }
