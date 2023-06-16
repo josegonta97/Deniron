@@ -1,0 +1,32 @@
+ion-content{  
+    --background: url(../../../assets/img/fondoLogin.png) 0 0/100% 100% no-repeat;
+    }
+    
+    ion-item {
+      --ion-input-placeholder-color: #aa8465;    
+    }
+    
+    ion-button {
+      --background: #773d0d;
+      --color: white;
+    }
+  
+    ion-label{
+      color: black;
+      
+      
+    }
+  
+    .link-as-text a {
+      text-decoration: none;
+      color: inherit;
+      cursor: inherit;
+    }
+    
+    .login-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
