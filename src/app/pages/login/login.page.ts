@@ -19,6 +19,8 @@ export class LoginPage implements OnInit {
 
     // set to landscape
     this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.LANDSCAPE);
+    
+    
   }
 
   ngOnInit() {

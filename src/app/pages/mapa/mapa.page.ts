@@ -5,11 +5,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './mapa.page.html',
   styleUrls: ['./mapa.page.scss'],
 })
-export class MapaPage implements OnInit {
+export class MapaPage implements OnInit {  
 
-  constructor() { }
+
+  constructor() { 
+    
+  }
+  
 
   ngOnInit() {
   }
-
-}
+};
