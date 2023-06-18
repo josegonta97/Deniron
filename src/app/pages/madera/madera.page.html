@@ -1,19 +1,32 @@
 <ion-header [translucent]="true">
-  
-  <img src="..\..\assets\img\iconomadera.png">
-  <ion-card-header>
-    <ion-card-title>Madera</ion-card-title>
-    <div style="width: 10vw; height: 10vh;">
-    </div>
     
-    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-  </ion-card-header>
+  
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col size="0.2">
+        <ion-button [routerLink]="['../ciudad']"></ion-button>
+      </ion-col>
+      <ion-col size="2">
+        <img src="..\..\..\assets\img\iconomadera.png">
+      </ion-col>
+      <ion-col size="6">
+        <ion-content class="ion-padding">
+          <h1>Leñador</h1>
+          <p>Durante el dia los leñadores se dedican a recolectar madera. Dicen que el bosque de noche oculta muchos
+            misterios</p>
+
+        </ion-content>
+      </ion-col>        
+      <ion-col>
+        <ion-content class="ion-padding">
+          <h1>LEVEL</h1>
+        </ion-content>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">madera</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+
 </ion-content>

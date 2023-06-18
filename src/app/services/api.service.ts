@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { User } from '../models/user';
+import { City } from '../models/city';
 
 
 @Injectable({
@@ -26,6 +27,10 @@ export class ApiService {
   
   deleteUser(userId: number) {
     return this.http.delete(`https://api.example.com/users/${userId}`);
+  }
+
+  createCity(city: City) {
+    return this.http.post('http://localhost:8080/api/v1/cities', city);
   }
   
 }
