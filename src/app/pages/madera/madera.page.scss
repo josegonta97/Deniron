@@ -1,7 +1,9 @@
 ion-header{
-    background-color: rgb(35, 168, 124)
+    background-color: rgb(21, 128, 92)
 }
 
-ion-content{
-    background-color: rgb(35, 168, 124);
-}
+
+ion-content {
+    --background: rgb(35, 168, 124);
+    --color: #fff;
+  }

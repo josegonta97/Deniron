@@ -1,11 +1,17 @@
 ion-col {
-    background-color: #135d54;
     border: solid 1px #fff;
     color: #fff;
     text-align: center;
+    width: fit-content;
+    height: fit-content;
   }
 
 ion-row{
     text-align: center;
-    height: 5vw;
+    height: fit-content;
+}
+
+img {
+  width: 10vw;
+  height: 15vh;
 }

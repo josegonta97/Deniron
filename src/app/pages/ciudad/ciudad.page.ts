@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ciudad.page.scss'],
 })
 export class CiudadPage implements OnInit {
+  
+  
 
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit() {
+    const myCustomIcon = "../../../assets/img/maderasrc.png";
   }
 
 }
