@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="0.6">
+        <ion-button class="backbutton" [routerLink]="['../ciudad']">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col size="1">
+        <img class="edificioPrincipal" src="..\..\..\assets\img\mina.png">
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          <ion-label class="ion-text-lg">Mina (Nivel X)</ion-label>
+        </ion-row>
+        <ion-row>
+          <ion-label class="ion-text-md">Los mineros se encargan de recoger piedra para suministrar la ciudad</ion-label>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+<ion-content>
+<ion-grid>
+  <ion-row>
+    <ion-col class="dark-brown" size="0.7"><ion-label>Recurso</ion-label></ion-col>
+    <ion-col class="dark-brown" size="1.3"><ion-label>Producción por hora</ion-label></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="light-brown" size="0.7"><img class="recursos" src="../../../assets/img/iconopiedra.png"></ion-col>
+    <ion-col class="light-brown" size="1.3">
+      <ion-label>23000</ion-label>
+    </ion-col>
+  </ion-row>
+
+  
+</ion-grid>
+</ion-content>

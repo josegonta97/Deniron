@@ -30,6 +30,22 @@ const routes: Routes = [
     path: 'madera',
     loadChildren: () => import('./pages/madera/madera.module').then( m => m.MaderaPageModule)
   },
+  {
+    path: 'cuartel',
+    loadChildren: () => import('./pages/cuartel/cuartel.module').then( m => m.CuartelPageModule)
+  },
+  {
+    path: 'mina',
+    loadChildren: () => import('./pages/mina/mina.module').then( m => m.MinaPageModule)
+  },
+  {
+    path: 'barrera',
+    loadChildren: () => import('./pages/barrera/barrera.module').then( m => m.BarreraPageModule)
+  },
+  {
+    path: 'almacen',
+    loadChildren: () => import('./pages/almacen/almacen.module').then( m => m.AlmacenPageModule)
+  },
 
 ];
 

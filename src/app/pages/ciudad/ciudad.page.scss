@@ -9,9 +9,9 @@ ion-button{
     background-color: transparent;
     --background : transparent;
     position: fixed;   
-   // --background: none;
-   //  --border-radius: 0;
-  //--box-shadow: none;
+    --background: none;
+    --border-radius: 0;
+    --box-shadow: none;
     
 }
 
@@ -74,39 +74,35 @@ ion-button{
 .button1{
     display: ion-button;  
     margin-left: 86vw;
-    width: 3vw; 
-    height: 5vh;    
+    width: 6vw; 
+    height: 6vh; 
     margin-top: 90vh;
 }
 
-.button2{
-    display: ion-button;   
-    margin-left: 90vw;
-    width: 3vw; 
-    height: 5vh;       
+.button2{  
+    margin-left: 92vw;
+    width: 5vw; 
+    height: 6vh;       
     margin-top: 90vh;
 }
 
-.button3{
-    display: ion-button;  
-    margin-left: 94vw;
-    width: 3vw; 
-    height: 5vh;   
-    margin-top: 90vh;
+.menus{
+    margin-left: 0;
+    width: 12vw; 
+    height: 6vh;
 }
 
 .recursomadera{
     display: ion-button;
-    width: 5vw;
+    width: 7vw;
     height: 3vh;
     margin-left: 35vw;
     margin-top: 1vh;
-    background-color: transparent;
 }
 
 .recursobarro{
     display: ion-button;
-    width: 5vw;
+    width: 7vw;
     height: 3vh;
     margin-left: 45vw;
     margin-top: 1vh;
@@ -114,20 +110,24 @@ ion-button{
 
 .recursopiedra{
     display: ion-button;
-    width: 5vw;
+    width: 7vw;
     height: 3vh;
     margin-left: 55vw;
     margin-top: 1vh;
 }
 
 img{
+    margin-left: 0;
     width: 2vw; 
     height: 3vh;
 }
 
+
+
 a{
     color: black;
     font-size: 1vw;
+    
 }
 
        

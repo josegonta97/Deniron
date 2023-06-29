@@ -15,3 +15,31 @@ img {
   width: 10vw;
   height: 15vh;
 }
+
+ion-content {
+  --background: rgb(131, 95, 61);
+  --color: #fff;
+}
+
+.button1{
+  position: fixed;
+  margin-left: 85vw;
+  width: 6vw; 
+  height: 6vh; 
+  margin-top: 0vh;
+}
+
+.button2{  
+  background-color: brown;
+  position: fixed;
+  margin-left: 92vw;
+  width: 5vw; 
+  height: 6vh;       
+  margin-top: 0vh;
+}
+
+.menus{
+  margin-left: 0;
+  width: 12vw; 
+  height: 6vh;
+}
