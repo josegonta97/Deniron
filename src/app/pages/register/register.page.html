@@ -2,6 +2,10 @@
 
 <ion-content>
 
+  <ion-button class="backbutton" [routerLink]="['../login']">
+    <ion-icon name="chevron-back-outline"></ion-icon>
+  </ion-button>
+
   <div class="ion-padding">
   <div class="login-container"> 
     
@@ -21,16 +25,15 @@
     </ion-item>        
     <div class="ion-padding">
     <ion-button expand="full" type="submit" (click)="register()">Registrarse</ion-button>    
-    </div>
-    <ion-label class="link-as-text">
-      <a href="../login/">¿Ya tienes cuenta? Inicia sesión aqui</a>
-    </ion-label>
+    </div>    
     
     <div class="ion-padding">
       <ion-label *ngIf="error" color="danger">{{ error }}</ion-label>
       </div>
 
-      
+      <div class="ion-padding">
+        <ion-label *ngIf="success" color="success">{{ success }}</ion-label>
+        </div>  
 
     </div> 
   </div>

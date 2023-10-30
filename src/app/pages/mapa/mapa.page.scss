@@ -1,45 +1,89 @@
-ion-col {
-    border: solid 1px #fff;
-    color: #fff;
-    text-align: center;
-    width: fit-content;
-    height: fit-content;
-  }
-
-ion-row{
-    text-align: center;
-    height: fit-content;
-}
-
 img {
   width: 10vw;
   height: 15vh;
 }
 
-ion-content {
-  --background: rgb(131, 95, 61);
-  --color: #fff;
+ion-content{
+  position: fixed;
+  --background: rgb(212, 193, 174);
 }
 
-.button1{
-  position: fixed;
-  margin-left: 85vw;
-  width: 6vw; 
-  height: 6vh; 
-  margin-top: 0vh;
-}
 
-.button2{  
-  background-color: brown;
-  position: fixed;
-  margin-left: 92vw;
-  width: 5vw; 
+.button1{  
+  margin-left: 90vw;
+  margin-top: 90vh;
+  width: 10vw; 
   height: 6vh;       
-  margin-top: 0vh;
+  background-color: transparent;
+    --background : transparent;
+    position: fixed;   
+    --background: none;
+    --border-radius: 0;
+    --box-shadow: none;
 }
 
 .menus{
-  margin-left: 0;
-  width: 12vw; 
+  width: 4vw; 
   height: 6vh;
+}
+
+.atacar{
+  --background: rgb(139, 48, 32);
+  --color: #fff;
+  width: 3vw;
+  height: 3vh;
+  width: 8vw;
+  height: 4vh;
+  font-size: 1vw;
+  margin-left: 1.5vw;
+}
+
+.panelAtaque{  
+  background-color: rgb(150, 114, 78);
+  position: fixed;
+  margin-top: 1vh;
+  margin-left: 82vw;
+}
+
+.iconos{
+  width: 2vw;
+  height: 4vh;
+}
+
+ion-input {
+  --background: #e4e1db;
+  --color: #020101;
+  --placeholder-color: #ddd;
+  --placeholder-opacity: 0.8;
+
+  --padding-bottom: 10px;
+  --padding-end: 10px;
+  --padding-start: 10px;
+  --padding-top: 10px;
+
+    
+}
+
+ion-item{
+  --background: #e4e1db;
+}
+
+
+@media screen and (max-width: 768px) {
+  ion-label{
+    font-size: 1vw;
+  }
+
+  .panelAtaque{
+    width: 16vw;   
+    
+
+    ion-row {
+      height: 6vh;
+    }
+  }
+  ion-item{
+    height: 4vh;
+    --background: #e4e1db;
+  }
 }

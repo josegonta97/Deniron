@@ -7,22 +7,13 @@ ion-content {
     --color: #fff;
   }
 
-ion-list {
-    background-color: rgb(214, 184, 155);
-}
-
-ion-item{
-    --background: rgb(175, 126, 81);    
-
-    ion-label{
-        color: black;
-        font-size: 1vw;
-    }
-}
-
 ion-label{
     color: black;
-    font-size: 1vw;
+}
+
+.edificioPrincipal{
+    width: 6vw;
+    height: 10vh;
 }
 
 ion-button{
@@ -37,41 +28,49 @@ ion-button{
     height: 5vh;
 }
 
-
-
-a{
-    color: rgb(61, 35, 11);
-    font-size: 1vw;
+.dark-brown{
+     background-color: rgb(165, 127, 91); 
 }
 
-img{
+.light-brown{
+    background-color: rgb(187, 156, 132);    
+}
+
+.edificios{
     width: 3vw;
     height: 6vh;
 }
 
-
-.upgrade-container{
-    justify-content: center;
-}
-
-.dark-brown{
-     background-color: rgb(161, 114, 70); 
-}
-
-.castillo{
-    width: 6vw;
-    height: 10vh;
-}
-
 .recursos{
-    margin-top: 1vh;
     width: 2vw;
     height: 4vh;
 }
 
-ion-thumbnail{
-    height: 6vh;
-    width: 3vw;    
+a{
+    color:rgb(139, 80, 24);
 }
+  
+ion-input {
+    --background: #e4e1db;
+    --color: #020101;
+    --placeholder-color: #ddd;
+    --placeholder-opacity: 0.8;
 
+    --padding-bottom: 10px;
+  --padding-end: 10px;
+  --padding-start: 10px;
+  --padding-top: 10px;
+    
+  }
 
+  @media screen and (max-width: 768px) {
+    .edificios{       
+        width: 6vw;
+        height: 10vh;
+    }  
+    
+    .recursos{
+        width: 5vw;
+        height: 5vh;
+    }
+  }

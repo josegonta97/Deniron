@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./madera.page.scss'],
 })
 export class MaderaPage implements OnInit {
+  
+
 
   constructor() { }
 

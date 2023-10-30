@@ -13,6 +13,7 @@ export class RegisterPage implements OnInit {
   username : string = '';
   password : string = '';
   error: string = '';
+  success: string = '';
   router: any;
 
   constructor(private apiService: ApiService) { }
@@ -27,39 +28,25 @@ export class RegisterPage implements OnInit {
       password: this.password,
       email: this.email,
     };
-    const city: City = {
-      id: 0,
-      cityName : 'Pueblo de ' + this.username,
-      cityUsername : this.username,
-      barrack : 0,
-      woodcutter : 0,
-      mine : 0,
-      pottery : 0,
-      wood : 200,
-      stone : 200,
-      mud : 200,
-      sword : 1,
-      lance : 1,
-      axe : 0,
-      swordAmount : 0,
-      lanceAmount : 0,
-      axeAmount : 0,
-    };
+    
 
 
     //Llamadas al CRUD de spring
     //Crear usuario
     this.apiService.createUser(user).subscribe(
-    (response) => {
+    (response) => {      
+      this.success = 'Usuario creado correctamente';
       console.log(response);      
     },
-    (error) => {          
-      this.error = 'Email, usuario o contraseña no validos';
+    (error) => {                
+      this.success = '';
+      this.error = 'Este email ya está siendo utilizado';
       console.error(error);
     }
     );
 
     //Crear ciudad
+    /*
     this.apiService.createCity(city).subscribe(
       (response) => {
         console.log('Se ha creado la ciudad');
@@ -69,7 +56,7 @@ export class RegisterPage implements OnInit {
         this.error = 'No se ha podido establecer conexion';
         console.error(error);
       }
-      );
+      );*/
 }
 
 }

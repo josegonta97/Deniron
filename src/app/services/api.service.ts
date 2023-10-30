@@ -22,15 +22,23 @@ export class ApiService {
   }
   
   updateUser(userId: number, user: User) {
-    return this.http.put(`https://api.example.com/users/${userId}`, user);
+    return this.http.put(`http://localhost:8080/api/v1/users/${userId}`, user);
   }
   
   deleteUser(userId: number) {
-    return this.http.delete(`https://api.example.com/users/${userId}`);
+    return this.http.delete(`http://localhost:8080/api/v1/users/${userId}`);
   }
 
   createCity(city: City) {
     return this.http.post('http://localhost:8080/api/v1/cities', city);
+  }
+
+  getCity(id: number) {
+    return this.http.get(`http://localhost:8080/api/v1/cities/${id}`);
+  }
+
+  getCitybyUser(username: string) {
+    return this.http.get(`http://localhost:8080/api/v1/cities/username/${username}`);
   }
   
 }

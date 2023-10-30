@@ -6,15 +6,19 @@ ion-content{
     --ion-input-placeholder-color: #aa8465;    
   }
   
-  ion-button {
-    --background: #773d0d;
+  ion-button {    
+    --background: #266886;
     --color: white;
   }
 
   ion-label{
-    color: black;
+    color: black;   
     
-    
+  }
+
+  ion-button.register {
+    --background: #cadb8c;
+    --color: rgb(7, 7, 7);
   }
 
   .link-as-text a {

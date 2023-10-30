@@ -7,15 +7,14 @@
         </ion-button>
       </ion-col>
       <ion-col size="1">
-        <img class="castillo" src="..\..\..\assets\img\castillo.png">
+        <img class="castillo" src="..\..\..\assets\img\cuartel.png">
       </ion-col>
       <ion-col>
         <ion-row>
-          <ion-label class="ion-text-lg">Castillo (Nivel X)</ion-label>
+          <ion-label class="ion-text-lg">Cuartel (Nivel 1)</ion-label>
         </ion-row>
         <ion-row>
-          <ion-label class="ion-text-md">Este edificio permite mejorar todos los edificios. Mejorando el castillo el
-            resto de edificios tardan menos en construirse</ion-label>
+          <ion-label class="ion-text-md">Aqui se pueden reclutar tropas para liderar ataques a otras ciudades</ion-label>
         </ion-row>
       </ion-col>
     </ion-row>
@@ -26,100 +25,130 @@
 
   <ion-grid class="mejorar">
     <ion-row>
-      <ion-col class="dark-brown" size="3"><ion-label>Edificios</ion-label></ion-col>
-      <ion-col class="dark-brown" size="7"><ion-label>Requisitos</ion-label></ion-col>
-      <ion-col class="dark-brown" size="1.75"><ion-label>Mejorar</ion-label></ion-col>
-    </ion-row>
-    
-    
-    <ion-row class="">
-      <ion-col size="3"><ion-item>
-        <ion-thumbnail slot="start"><img src="../../../assets/img/lanza.png" alt="Edificios"></ion-thumbnail>
-        <a>Lanza<br><ion-label class="ion-text-md">Nivel X</ion-label></a>
-      </ion-item></ion-col>
-
-      <ion-col size="1.75"><ion-item>
-        <ion-thumbnail class="materiales" slot="start"><img class="recursos" src="../../../assets/img/maderasrc.png" alt="Madera"></ion-thumbnail>
-        <ion-label>Coste</ion-label>
-      </ion-item></ion-col>
-
-    <ion-col size="1.75"><ion-item>
-        <ion-thumbnail class="materiales" slot="start"><img class="recursos" src="../../../assets/img/iconobarro.png" alt="Barro"></ion-thumbnail>
-        <ion-label>Coste</ion-label>
-      </ion-item></ion-col>
-
-    <ion-col size="1.75"><ion-item>
-        <ion-thumbnail class="materiales" slot="start"><img class="recursos" src="../../../assets/img/iconopiedra.png" alt="Piedra"></ion-thumbnail>
-        <ion-label>Coste</ion-label>
-      </ion-item></ion-col>
-
-    <ion-col size="1.75"><ion-item>
-        <ion-thumbnail class="materiales" slot="start"><img class="recursos" src="../../../assets/img/reloj.png" alt="Duracion"></ion-thumbnail>
-        <ion-label>Coste</ion-label>
-      </ion-item></ion-col>
-
-    <ion-col size="1.75"><ion-button>NIVEL X+1</ion-button></ion-col>
+      <ion-col class="dark-brown" size="2.5" size-md="1.5"><ion-label>Edificios</ion-label></ion-col>
+      <ion-col class="dark-brown" size="6" size-md="3.2"><ion-label>Requisitos</ion-label></ion-col>
+      <ion-col class="dark-brown" size="3.25" size-md="2.25"><ion-label>Reclutar</ion-label></ion-col>
     </ion-row>
 
 
-    <ion-row>      
-      <ion-col size="3"><ion-item>
-          <ion-thumbnail class="edificios" slot="start"><img src="../../../assets/img/espada.png" alt="Edificios"></ion-thumbnail>
-          <a>Espada<br><ion-label class="ion-text-md">Nivel X</ion-label></a>
-        </ion-item></ion-col>
+    <ion-row>
+      <ion-col class="light-brown" size="1" size-md="0.5">
+        <div class="ion-text-center"><img class="edificios" src="../../../assets/img/lanza.png"></div>
+      </ion-col>
+      <ion-col class="light-brown" size="1.5" size-md="1"><ion-label class="ion-text-md">Lanzas<br><a>Nivel 1</a></ion-label></ion-col>
 
-        <ion-col size="1.75"><ion-item>
-          <ion-thumbnail class="materiales" slot="start"><img class="recursos" src="../../../assets/img/maderasrc.png" alt="Madera"></ion-thumbnail>
-          <ion-label>Coste</ion-label>
-        </ion-item></ion-col>
-  
-      <ion-col size="1.75"><ion-item>
-          <ion-thumbnail class="materiales" slot="start"><img class="recursos" src="../../../assets/img/iconobarro.png" alt="Barro"></ion-thumbnail>
-          <ion-label>Coste</ion-label>
-        </ion-item></ion-col>
-  
-      <ion-col size="1.75"><ion-item>
-          <ion-thumbnail class="materiales" slot="start"><img class="recursos" src="../../../assets/img/iconopiedra.png" alt="Piedra"></ion-thumbnail>
-          <ion-label>Coste</ion-label>
-        </ion-item></ion-col>
-  
-      <ion-col size="1.75"><ion-item>
-          <ion-thumbnail class="materiales" slot="start"><img class="recursos" src="../../../assets/img/reloj.png" alt="Duracion"></ion-thumbnail>
-          <ion-label>Coste</ion-label>
-        </ion-item></ion-col>
+      
+      <ion-col class="light-brown" size="0.5" size-md="0.3"><img class="recursos"
+          src="../../../assets/img/maderasrc.png" alt="Madera"></ion-col>
+      <ion-col class="light-brown" size="1" size-md="0.5"><ion-label>70</ion-label></ion-col>
 
-      <ion-col size="1"><ion-button>NIVEL X+1</ion-button></ion-col>
+
+      <ion-col class="light-brown" size="0.5" size-md="0.3"><img class="recursos"
+          src="../../../assets/img/iconobarro.png" alt="Madera"></ion-col>
+      <ion-col class="light-brown" size="1" size-md="0.5"><ion-label>20</ion-label></ion-col>
+
+
+      <ion-col class="light-brown" size="0.5" size-md="0.3"><img class="recursos"
+          src="../../../assets/img/iconopiedra.png" alt="Madera"></ion-col>
+      <ion-col class="light-brown" size="1" size-md="0.5"><ion-label>40</ion-label></ion-col>
+
+
+      <ion-col class="light-brown" size="0.5" size-md="0.3"><img class="recursos" src="../../../assets/img/reloj.png"
+          alt="Madera"></ion-col>
+      <ion-col class="light-brown" size="1" size-md="0.5"><ion-label>0:00</ion-label></ion-col>
+
+      <ion-col class="light-brown" size="1.5" size-md="0.5">
+        <ion-input label-placement="floating" fill="outline" class="custom" placeholder="Enter text"></ion-input>
+        </ion-col>
+      <ion-col class="light-brown" size="1.75" size-md="1.75">
+        <div class="ion-text-center">
+          <ion-button (click)="reclutar()">Reclutar</ion-button>
+        </div>
+      </ion-col>
+
     </ion-row>
 
-    
-    <ion-row>      
-      <ion-col size="3"><ion-item>
-          <ion-thumbnail class="edificios" slot="start"><img src="../../../assets/img/hacha.png" alt="Edificios"></ion-thumbnail>
-          <a>Hacha<br>Nivel X</a>
-        </ion-item></ion-col>
 
-        <ion-col size="1.75"><ion-item>
-          <ion-thumbnail class="materiales" slot="start"><img class="recursos" src="../../../assets/img/maderasrc.png" alt="Madera"></ion-thumbnail>
-          <ion-label>Coste</ion-label>
-        </ion-item></ion-col>
-  
-      <ion-col size="1.75"><ion-item>
-          <ion-thumbnail class="materiales" slot="start"><img class="recursos" src="../../../assets/img/iconobarro.png" alt="Barro"></ion-thumbnail>
-          <ion-label>Coste</ion-label>
-        </ion-item></ion-col>
-  
-      <ion-col size="1.75"><ion-item>
-          <ion-thumbnail class="materiales" slot="start"><img class="recursos" src="../../../assets/img/iconopiedra.png" alt="Piedra"></ion-thumbnail>
-          <ion-label>Coste</ion-label>
-        </ion-item></ion-col>
-  
-      <ion-col size="1.75"><ion-item>
-          <ion-thumbnail class="materiales" slot="start"><img class="recursos" src="../../../assets/img/reloj.png" alt="Duracion"></ion-thumbnail>
-          <ion-label>Coste</ion-label>
-        </ion-item></ion-col>
+    <ion-row>
+      <ion-col class="light-brown" size="1" size-md="0.5">
+        <div class="ion-text-center"><img class="edificios" src="../../../assets/img/espada.png"></div>
+      </ion-col>
+      <ion-col class="light-brown" size="1.5" size-md="1"><ion-label class="ion-text-md">Espadas<br><a>Nivel 1</a></ion-label></ion-col>
 
-      <ion-col size="1"><ion-button>NIVEL X+1</ion-button></ion-col>
+
+      <ion-col class="light-brown" size="0.5" size-md="0.3"><img class="recursos"
+          src="../../../assets/img/maderasrc.png" alt="Madera"></ion-col>
+      <ion-col class="light-brown" size="1" size-md="0.5"><ion-label>60</ion-label></ion-col>
+
+
+      <ion-col class="light-brown" size="0.5" size-md="0.3"><img class="recursos"
+          src="../../../assets/img/iconobarro.png" alt="Madera"></ion-col>
+      <ion-col class="light-brown" size="1" size-md="0.5"><ion-label>40</ion-label></ion-col>
+
+
+      <ion-col class="light-brown" size="0.5" size-md="0.3"><img class="recursos"
+          src="../../../assets/img/iconopiedra.png" alt="Madera"></ion-col>
+      <ion-col class="light-brown" size="1" size-md="0.5"><ion-label>50</ion-label></ion-col>
+
+
+      <ion-col class="light-brown" size="0.5" size-md="0.3"><img class="recursos" src="../../../assets/img/reloj.png"
+          alt="Madera"></ion-col>
+      <ion-col class="light-brown" size="1" size-md="0.5"><ion-label>0:00</ion-label></ion-col>
+
+      <ion-col class="light-brown" size="1.5" size-md="0.5">
+        <ion-input label-placement="floating" fill="outline" class="custom" placeholder="Enter text"></ion-input>
+        </ion-col>
+      <ion-col class="light-brown" size="1.75" size-md="1.75">
+        <div class="ion-text-center">
+          <ion-button>Reclutar</ion-button>
+        </div>
+      </ion-col>
+
     </ion-row>
-  
+
+    <ion-row>
+      <ion-col class="light-brown" size="1" size-md="0.5">
+        <div class="ion-text-center"><img class="edificios" src="../../../assets/img/hacha.png"></div>
+      </ion-col>
+      <ion-col class="light-brown" size="1.5" size-md="1"><ion-label class="ion-text-md">Hachas<br><a>Nivel 1</a></ion-label></ion-col>
+
+
+      <ion-col class="light-brown" size="0.5" size-md="0.3"><img class="recursos"
+          src="../../../assets/img/maderasrc.png" alt="Madera"></ion-col>
+      <ion-col class="light-brown" size="1" size-md="0.5"><ion-label>40</ion-label></ion-col>
+
+
+      <ion-col class="light-brown" size="0.5" size-md="0.3"><img class="recursos"
+          src="../../../assets/img/iconobarro.png" alt="Madera"></ion-col>
+      <ion-col class="light-brown" size="1" size-md="0.5"><ion-label>30</ion-label></ion-col>
+
+
+      <ion-col class="light-brown" size="0.5" size-md="0.3"><img class="recursos"
+          src="../../../assets/img/iconopiedra.png" alt="Madera"></ion-col>
+      <ion-col class="light-brown" size="1" size-md="0.5"><ion-label>80</ion-label></ion-col>
+
+
+      <ion-col class="light-brown" size="0.5" size-md="0.3"><img class="recursos" src="../../../assets/img/reloj.png"
+          alt="Madera"></ion-col>
+      <ion-col class="light-brown" size="1" size-md="0.5"><ion-label>0:00</ion-label></ion-col>
+
+      <ion-col class="light-brown" size="1.5" size-md="0.5">
+        <ion-input label-placement="floating" fill="outline" class="custom" placeholder="Enter text"></ion-input>
+        </ion-col>
+      <ion-col class="light-brown" size="1.75" size-md="1.75">
+        <div class="ion-text-center">
+          <ion-button (click)="noReclutar()">Reclutar</ion-button>
+        </div>
+      </ion-col>
+
+    </ion-row>  
+
   </ion-grid>
+
+  <div class="ion-padding">
+    <ion-label *ngIf="success" color="tertiary">{{ success }}</ion-label>
+    <ion-label *ngIf="warning" color="danger">{{ warning }}</ion-label>
+
+    </div>
+
 </ion-content>

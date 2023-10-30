@@ -5,11 +5,13 @@ ion-header{
 ion-content {
     --background: rgb(212, 193, 174);
     --color: #fff;
+
+    ion-col{
+    }
   }
 
 ion-label{
     color: black;
-    font-size: 1vw;
 }
 
 .edificioPrincipal{
@@ -34,9 +36,23 @@ ion-button{
 }
 
 .light-brown{
-    background-color: rgb(187, 156, 132);
+    background-color: rgb(187, 156, 132);    
 }
 
-img{
+.img{
     width: 2vw;
+    height: 4vh;
 }
+  
+@media screen and (max-width: 768px) {
+    .edificios{       
+        width: 6vw;
+        height: 10vh;
+    }  
+    
+    .img{
+        width: 4vw;
+        height: 8vh;
+    }
+  }
+  

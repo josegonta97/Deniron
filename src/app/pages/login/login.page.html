@@ -12,18 +12,19 @@
     </ion-item>       
   </div>
 
-    <div class="ion-padding">
-    <ion-label *ngIf="error" color="danger">{{ error }}</ion-label>
-    </div>
+    
     
     <ion-button expand="full" type="submit" (click)="login()">Iniciar sesión</ion-button>
     <div class="ion-padding">
       <div class="ion-text-center">
-        <ion-label class="link-as-text">
-          <a href="../register/">¿No tienes cuenta? Registrarse ahora</a>
-        </ion-label>
+        <ion-button class="register" [routerLink]="['../register']">Registrate</ion-button>
       </div>
     </div>
+
+    <div class="ion-padding">
+      <ion-label *ngIf="error" color="danger">{{ error }}</ion-label>
+      </div>
+
   </div>
 </ion-content>
 
